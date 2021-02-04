@@ -33,8 +33,8 @@ class TenTimesSpider(Spider):
         options.add_argument(" -–disable-web-security")
         options.add_argument("--no-sandbox")
         caps = options.to_capabilities()
-        self.driver = webdriver.Chrome('/Users/ashish/Downloads/chromedriver', desired_capabilities=caps)
-        self.driver.get('https://10times.com/usa/tradeshows?datefrom=2021-04-24&dateto=2021-04-30')
+        self.driver = webdriver.Chrome('/Users/mmt8856/Downloads/chromedriver', desired_capabilities=caps)
+        self.driver.get('https://10times.com/germany/tradeshows?datefrom=2021-11-20&dateto=2021-12-31')
         
         #home page
         # search_city = self.driver.find_element_by_xpath('//*[@id="explore-keywords"]').send_keys('Events in UAE')
